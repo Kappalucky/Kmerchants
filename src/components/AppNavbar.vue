@@ -17,13 +17,9 @@
         <div class="relative py-3 px-6 flex content-end items-center">
           <button
             @click="isOpen = !isOpen"
-            class="relative bg-black z-10 block h-8 w-8 rounded-full overflow-hidden"
+            class="relative bg-black z-10 text-white block h-8 w-8 rounded-full overflow-hidden"
           >
-            <!--<img
-							:src="require('~/assets/img/header/IMG_0054.JPG')"
-							class="w-full h-full object-cover"
-							alt="Avatar of Shaquille John-Foster"
-						/>-->
+            {{ userInitial }}
           </button>
           <button
             v-if="isOpen"
@@ -54,18 +50,17 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
+import { mapGetters, mapActions, mapState } from 'vuex';
 
 export default {
   name: 'Navbar',
   data() {
     return {
-      hidden: true,
       isOpen: false,
     };
   },
   computed: {
-    ...mapGetters(['userComplete']),
+    ...mapGetters(['userComplete', 'userInitial']),
   },
   created() {
     const escape = e => {

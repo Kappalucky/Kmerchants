@@ -18,7 +18,10 @@
               <p>{{ error.fullName }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="full-name"
+          >
             Full Name
           </label>
           <input
@@ -40,7 +43,10 @@
               <p>{{ error.birthDate }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="birth-date"
+          >
             Date of Birth
           </label>
           <input
@@ -84,7 +90,10 @@
               <p>{{ error.phone }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="phone-number"
+          >
             Phone Number
           </label>
           <input

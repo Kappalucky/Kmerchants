@@ -19,7 +19,10 @@
               <p>{{ error.ssn }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="social-security"
+          >
             SSN #
           </label>
           <input
@@ -42,7 +45,10 @@
               <p>{{ error.creditScore }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="credit-score"
+          >
             Credit Score
           </label>
           <input

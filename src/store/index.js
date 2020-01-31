@@ -86,7 +86,7 @@ export default new Vuex.Store({
 
       state.company = {};
       state.companies = [];
-      state.basicFormCompleted = false;
+      state.identityFormCompleted = false;
       state.financesFormCompleted = false;
       state.addressFormCompleted = false;
     },
@@ -154,6 +154,11 @@ export default new Vuex.Store({
     miscellaneousFormCompleted: state => state.miscellaneousFormCompleted,
     addressFormCompleted: state => state.addressFormCompleted,
     error: state => state.error,
+    userInitial: state => {
+      if (state.userProfile.fullName) {
+        return state.userProfile.fullName[0];
+      }
+    },
     userComplete: state => {
       if (
         state.identityFormCompleted == true &&
@@ -165,8 +170,6 @@ export default new Vuex.Store({
         return false;
       }
     },
-    getCompanyById: state => id =>
-      state.companies.find(company => company.id === id),
   },
   modules: {},
 });

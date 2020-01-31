@@ -2,7 +2,7 @@
   <div class="dashboard mt-8 container mx-auto">
     <section class="mx-4">
       <div class="flex">
-        <div class="w-full md:w-2/3 float-left mx-2">
+        <!---<div class="w-full md:w-2/3 float-left mx-2">
           <input
             id="search"
             v-model="search"
@@ -10,8 +10,8 @@
             type="text"
             placeholder="Search..."
           />
-        </div>
-        <div class="summary-aside w-full md:w-1/3 float-right mx-2">
+        </div>-->
+        <div class="summary-aside w-full md:w-1/2 text-center mx-auto">
           <router-link to="/add-company" class="btn" type="button"
             >Add Company</router-link
           >
@@ -27,7 +27,11 @@
                 class="my-4 h-32 border border-gray-400 bg-white rounded-b p-4 flex flex-col justify-between leading-normal"
               >
                 <div class="pb-4 my-auto flex items-center">
-                  <div class="w-10 h-10 bg-black rounded-full mr-4"></div>
+                  <div
+                    class="bg-black text-white block h-8 w-8 mx-1 rounded-full text-center text-xl font-bold align-middle overflow-hidden"
+                  >
+                    {{ company.name[0] }}
+                  </div>
                   <div class>
                     <p class="text-sm text-gray-600 flex items-center"></p>
                     <div
@@ -68,7 +72,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState, mapActions, mapGetters } from 'vuex';
 
 export default {
   name: 'dashboard',

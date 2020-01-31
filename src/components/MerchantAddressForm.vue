@@ -19,7 +19,10 @@
               <p>{{ error.street }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="street"
+          >
             Street Address
           </label>
           <input
@@ -41,7 +44,7 @@
               <p>{{ error.city }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="city">
             City
           </label>
           <input
@@ -63,7 +66,7 @@
               <p>{{ error.state }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="state">
             State
           </label>
           <input
@@ -85,7 +88,10 @@
               <p>{{ error.zip }}</p>
             </div>
           </transition>
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="zipcode"
+          >
             Zipcode
           </label>
           <input

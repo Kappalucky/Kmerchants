@@ -5,7 +5,7 @@
         Welcome to KMerchants!
       </h1>
       <p class="text">
-        The right place to keep track of companies and varios merchant data.
+        The right place to keep track of companies and various merchant data.
         Click below to begin.
       </p>
       <br />
