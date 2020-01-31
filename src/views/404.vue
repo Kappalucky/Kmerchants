@@ -2,30 +2,23 @@
 	<section class="m-4 px-4 h-screen flex justify-center items-center">
 		<div class="p4 container text-center mx-auto">
 			<h1 class="text-4xl titles text-mono tracking-widest">
-				Welcome to KMerchants!
+				Page not found
 			</h1>
-			<p>
-				The right place to keep track of companies and varios merchant data.
-				Click below to begin.
-			</p>
+			<p class="text mt-2">Sorry, but what you are looking for is not here.</p>
 			<br />
-			<router-link to="/onboard">
+			<router-link to="/">
 				<button
 					class="bg-gray-400 text-xs mt-4 hover:bg-black w-1/2 text-white font-bold py-2 uppercase"
 					type="button"
 				>
-					Get Started
+					Return To Home
 				</button>
 			</router-link>
 		</div>
 	</section>
 </template>
-
 <script>
-	// @ is an alias to /src
-
 	export default {
-		name: 'home',
-		components: {},
+		name: 'Error404',
 	};
 </script>
